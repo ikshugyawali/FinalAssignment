@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+<!--nav and hyperlinks-->
+<div class="menu"> 
+
+                <ul>
+                    <li> <a href="index.html">Top TV Shows</a></li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown-menu">
+                            <button class="dropbtn">Genre
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="romance.html">Romance</a>
+                              <a href="thriller.html">Thriller</a>
+                              <a href="comedy.html">Comedy</a>
+                            </div>
+                          </div> 
+                        
+                    </li>
+                    <li> <a href="down.html">Download</a></li>
+                    <li> <a href="cost.html">Purchased</a></li>
+                    <li> <a href="log.html">Login</a></li>
+                </ul>
+        </div>
+
+
+
+  <!-- slideshow-->
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/H1.jpg" style="width:100%">
+            <div class="text">The Lion King
+              <P>A Lion cub crown prince is tricked by a treacherous uncle into thinking he caused his father's death and flees into exile in despair, only to learn in adulthood his identity and his responsibilities.</P>
+                  <P>Directors: Roger Allers, Rob Minkoff</P>
+                 <P> Writers: Irene Mecchi (screenplay by), Jonathan Roberts (screenplay by)
+                  Stars: Matthew Broderick, Jeremy Irons, James Earl Jones
+                  </P>
+            </div>
+          </div>
+
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/H2.jpg" style="width:100%">
+            <div class="text">Mindsommar<p>A couple travels to Sweden to visit a rural hometown's fabled mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.</p>
+              <p>Director: Ari Aster</p>
+            <p>Writer: Ari Aster</p>
+          <p>Stars: Florence Pugh, Jack Reynor, Vilhelm Blomgren</p></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/H3.jpg" style="width:100%">
+            <div class="text">Avengers: Endgame
+              <p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+              <p>Directors: Anthony Russo, Joe Russo</p>
+              <p>Writers: Christopher Markus (screenplay by), Stephen McFeely (screenplay by</p>
+              <p>Stars: Robert Downey Jr., Chris Evans, Mark Ruffalo | See full cast & crew »</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="images/H4.jpg" style="width:100%">
+              <div class="text">Frozen2<p>Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.</p>
+              <p>Directors: Chris Buck, Jennifer Lee</p>
+            <p>Writers: Jennifer Lee (characters), Allison Schroeder (screenplay)</p>
+          <p>Stars: Jonathan Groff, Kristen Bell, Evan Rachel Wood | See full cast & crew »</p></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/H5.jpg" style="width:100%">
+                <div class="text">AD ASTRA<p>A man journeys across a lawless solar system to find his missing father -- a renegade scientist who poses a threat to humanity</p>
+                <p>Initial release: September 19, 2019 (Czechia)</p>
+              <p>Stars: Brad Pitt</p></div>
+              </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+    </div>
+    <!--Contents-->
+    <table width="100%" cellspacing="10" cellpadding="10">
+        <tr><h3>Top Tv shows</h3></tr>
+        <td>
+            <img src="images/M1.jpg" width="310" height="320">
+        </td>
+        <td>
+            <img src="images/M2.jpg" width="310" height="320">
+        </td>
+        <td>
+            <img src="images/M3.jpg" width="310" height="320">
+        </td>
+        <td>
+            <img src="images/M4.jpg" width="310" height="320">
+            <tr>
+              <td>Carnival Row</td>
+              <td>Euphoria</td>
+              <td>The Society</td>
+              <td>Too Old To Die Young</td>
+          </tr>
+            
+    </table>
+    <table width="100%" cellspacing="10" cellpadding="10">
+      <tr><h3>Latest TV Episodes</h3></tr>
+      <td>
+          <img src="images/M6.jpg" width="310" height="320">
+      </td>
+      <td>
+          <img src="images/M7.jpg" width="310" height="320">
+      </td>
+      <td>
+          <img src="images/M8.jpg" width="310" height="320">
+      </td>
+      <td>
+          <img src="images/M9.jpg" width="310" height="320">
+          <tr>
+            <td>13 Reasons Why</td>
+            <td>Stranger Things</td>
+            <td>Legacies</td>
+            <td>Game of Thrones</td>
+        </tr>
+          
+  </table>
+
+         <!--Footer-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+  
+          <h3>Hob<span>Bit</span></h3>
+  
+          <p class="footer-links">
+            <a href="index.html" >Top Tv Shows |</a>
+      <a href="romance.html"  >Romance |</a>
+       <a href="thriller.html" >Thriller |</a>
+        <a href="comedy.html" >Comedy |</a>
+       <a href="down.html">Download</a>
+        <a href="cost.html " >Purchased |</a>
+        <a href="log.html" >Login</a>
+          </p>
+
+          <p class="footer-company-name">Hob Bit &copy; 2019</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p> Kathmandu,Nepal</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+977 9844883058</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">ikshugyawali@gmail.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about">
+            <span>About the page</span>
+            Hob Bit - Free movies online, here you can watch movies online in high quality for free which include advertisement, free trial.Look at our pricing plans for more information.
+          </p>
+  
+        </div>
+      </footer>
+</body>
+</html>

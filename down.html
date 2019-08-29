@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ss.css">
+    <link  rel="stylesheet" href="css/down.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--nav and hyperlinks-->
+<div class="menu"> 
+
+    <ul>
+        <li> <a href="index.html">Top TV Shows</a></li>
+        <li class="nav-item dropdown">
+            <div class="dropdown-menu">
+                <button class="dropbtn">Genre
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="romance.html">Romance</a>
+                  <a href="thriller.html">Thriller</a>
+                  <a href="comedy.html">Comedy</a>
+                </div>
+              </div> 
+            
+        </li>
+        <li> <a href="down.html">Download</a></li>
+        <li> <a href="cost.html">Purchased</a></li>
+        <li> <a href="log.html">Login</a></li>
+    </ul>
+</div>
+<button class="btn"> Download <i class="fas fa-download"></i></button>
+    <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/D1.jpg" style="width:100%">
+              <div class="text"><H3>SPIDERMAN: Far From Home</H3><p>Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.</p><p><h4>Stars: Tom Holland , Zendaya</h4></p><p>Downloads Available...</p></div>
+            </div>
+  
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/D2.jpg" style="width:100%">
+              <div class="text"><h3>Descendants 3</h3><p>Mal and her friends face their biggest challenge yet when an unfathomable dark force threatens the people of Auradon.</p><p><h4>Stars: 	
+                  Dove Cameron , Cameron Boyce , Sofia Carson</h4></p><p>Downloads Available</p></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/D3.jpg" style="width:100%">
+              <div class="text"><h3>X-MEN: Dark Phoniex</h3><p>Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix. Now the X-Men will have to decide if the life of a team member is worth more than all of humanity.</p><p><h4>Stars: James McAvoy, Michael Fassbender, Jennifer Lawrence</h4></p><p>Downloads Available...</p></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/D4.jpg" style="width:100%">
+                <div class="text"><h3>A Dogs's Journey</h3><p>A dog finds the meaning of his own existence through the lives of the humans he meets.</p><p><h4>Stars: Josh Gad, Dennis Quaid, Kathryn Prescott</h4></p><p>Downloads Available...</p></div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+      </div>
+
+
+
+     <!--Footer-->
+     <footer class="footer-distributed">
+
+        <div class="footer-left">
+  
+          <h3>Hob<span>Bit</span></h3>
+  
+          <p class="footer-links">
+            <a href="index.html" >Top Tv Shows |</a>
+      <a href="romance.html"  >Romance |</a>
+       <a href="thriller.html" >Thriller |</a>
+        <a href="comedy.html" >Comedy |</a>
+        <li> <a href="down.html">Download</a></li>
+        <a href="cost.html " >Purchased |</a>
+        <a href="log.html" >Login</a>
+          </p>
+
+          <p class="footer-company-name">Hob Bit &copy; 2019</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p> Kathmandu,Nepal</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+977 9844883058</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">ikshugyawali@gmail.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about">
+            <span>About the page</span>
+            Hob Bit - Free movies online, here you can watch movies online in high quality for free which include advertisement, free trial.Look at our pricing plans for more information.
+          </p>
+  
+        </div>
+      </footer>
+</body>
+</html>
